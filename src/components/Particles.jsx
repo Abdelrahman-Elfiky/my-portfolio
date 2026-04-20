@@ -9,7 +9,7 @@ export default function Particles() {
     const ctx = canvas.getContext("2d");
 
     let particles = [];
-    const COUNT = 60; // خفيف
+    const COUNT = 60; 
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -33,13 +33,12 @@ export default function Particles() {
         p.x += p.vx;
         p.y += p.vy;
 
-        // bounce بسيط
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(99,102,241,0.25)"; // indigo
+        ctx.fillStyle = "rgba(99,102,241,0.25)";
         ctx.fill();
       });
 
