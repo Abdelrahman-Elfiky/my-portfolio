@@ -51,7 +51,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-        {/* Logo */}
+       
         <h1
           onClick={() => scrollToSection("home")}
           className="font-semibold cursor-pointer"
