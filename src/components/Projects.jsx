@@ -18,7 +18,7 @@ export default function Projects() {
             bg-white/5 backdrop-blur hover:-translate-y-2 transition"
           >
 
-            {/* صورة */}
+            
             <div className="h-40 bg-gray-800 overflow-hidden">
               <img
                 src={p.image}
