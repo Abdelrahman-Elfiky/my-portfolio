@@ -7,7 +7,7 @@ body {
   position: relative;
 }
 
-/* layer 1 */
+
 body::before {
   content: "";
   position: fixed;
@@ -21,7 +21,7 @@ body::before {
   pointer-events: none;
 }
 
-/* layer 2 (أهدى شوية) */
+
 body::after {
   content: "";
   position: fixed;
@@ -35,7 +35,7 @@ body::after {
   pointer-events: none;
 }
 
-/* حركة ناعمة */
+
 @keyframes floatOne {
   0% {
     transform: translate(0, 0);
